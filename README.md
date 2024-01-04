@@ -1,2 +1,5 @@
-# dp-posthoc
-A notebook which examines the impact of differential privacy on LIME explanation of residual neural network
+# dp-posthoc repository contents
+This repo includes a juptyer notebook which examines the impact of differential privacy on the LIME explanation method when used for a residual neural network. For more background on motivation behind this notebook and what differential privacy and LIME are, please refer to the dp-posthoc-paper pdf. the notebook  is a preliminary but novel examination into how differential privacy affects existing methods of post hoc model explanation. For areas of future work, please also refer to the dp-posthoc-paper.pdf. 
+# notebook contents 
+The CIFAR10 (https://www.cs.toronto.edu/~kriz/cifar.html) dataset is used to train RESNET18 models (https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html) with and without differential privacy. The OPACUS privacy engine is used (https://opacus.ai/tutorials/building_image_classifier) to implement differential privacy. The LIME () method of explanation is then used to generate predictions in the form of heatmaps on which features of the images were most important in classifying the image. The goal is to observe differences in explanations for models with and without differential privacy. 
+
